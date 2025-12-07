@@ -70,25 +70,27 @@
 .slider{
   display: flex;
    width: 100%;
-  
+  overflow: hidden;
   position: relative;
   border-radius: 5px;
 }
 .slider__img{
   display: flex;
-  background-color: transparent;
-  width: 100%;
+  transition: 2s;
+  width: 300vw;
+  gap: 20px;
 }
 .slider__img img{
   width: 100vw;
-  padding-left: 10px;
-  padding-right: 10px;
   border-radius: 20px;
+  overflow: hidden;
 }
 .sliderleft__button{
   position: absolute;
   top: 35%;
   left: 5%;
+  z-index: 5;
+  cursor: pointer;
 }
 .sliderleft__button i{
   font-size: 7vw;
@@ -98,6 +100,8 @@
   position: absolute;
   top: 35%;
   right: 5%;
+   z-index: 5;
+  cursor: pointer;
 }
 .sliderright__button i{
   font-size: 7vw;
@@ -115,7 +119,6 @@
   padding: 5px;
   margin-top: 10px;
 }
-
 /* Brand */
 .brand{
     display: flex;
