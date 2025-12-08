@@ -448,8 +448,4 @@ side navbar */
   border: solid black 1px;
 }
 
-  @media screen and (max-width:562px){
-    .sections{
-      grid-template-columns: 1fr 2fr;
-    }
-  }
+  
